@@ -24,7 +24,7 @@ public interface UserMapper {
 	//     서버 실행할 때 자동으로 생성해 놓은 UserDTO 에 
 	//     로그인한 회원의 정보를 위함 
 	// WHERE user_id = #{user_id} AND user_pw = #{user_pw} 소스 확인할 것
-	// 주의해서 작성하기
+	// 주의해서 작성하기 # 을 $ 로 혼동하지 말 것
 	@Select("SELECT * " +
 	        "FROM user_table " +
 	        "WHERE user_id = #{user_id} AND user_pw = #{user_pw}")
